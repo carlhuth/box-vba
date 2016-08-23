@@ -67,7 +67,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 * v1.0 Initial revision
 */
 
-grammar VisualBasic6;
+grammar VB;
 
 options
 {
@@ -900,8 +900,8 @@ WS : [ \t]+;
 
 
 // letters
-fragment LETTER : [a-zA-Z_ŠšŸ€…†];
-fragment LETTERORDIGIT : [a-zA-Z0-9_ŠšŸ€…†];
+fragment LETTER : [a-zA-Z_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½];
+fragment LETTERORDIGIT : [a-zA-Z0-9_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½];
 
 // case insensitive chars
 fragment A:('a'|'A');
