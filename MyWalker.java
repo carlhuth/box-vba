@@ -14,7 +14,7 @@ public class MyWalker implements VisualBasic6Listener {
 	    VisualBasic6Parser parser = new VisualBasic6Parser(tokens);
 	    ParseTree tree = parser.startRule();
 	    ParseTreeWalker walker = new ParseTreeWalker();
-		walker.walk(new VisualBasic6BaseListener(), tree);
+		walker.walk(new MyWalker(), tree);
 	}
 	/**
 	 * {@inheritDoc}
@@ -34,7 +34,7 @@ public class MyWalker implements VisualBasic6Listener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void enterModule(VisualBasic6Parser.ModuleContext ctx) {
-		System.out.println("We");
+		System.out.println("Test message: module entered.");
 	}
 	/**
 	 * {@inheritDoc}
